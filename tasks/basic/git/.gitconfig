@@ -1,0 +1,7 @@
+[core]
+	excludesfile = ___HOME___/.gitignore_global
+[user]
+	name = ___NAME___
+	email = ___EMAIL___
+[commit]
+	template = ___HOME___/.stCommitMsg

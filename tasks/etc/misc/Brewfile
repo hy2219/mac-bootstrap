@@ -1,0 +1,9 @@
+cask "1password"
+cask "adobe-acrobat-reader"
+cask "paragon-ntfs"
+cask "private-internet-access"
+cask "vlc"
+mas "Free MP4 Converter", id: 693443591
+mas "Hancom Office HWP 2014 VP Viewer", id: 416746898
+mas "Shazam", id: 897118787
+mas "Termius", id: 1176074088

@@ -1,0 +1,3 @@
+tap "git-duet/tap"
+brew "git"
+cask "fork"

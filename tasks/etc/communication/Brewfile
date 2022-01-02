@@ -1,0 +1,9 @@
+cask "discord"
+cask "microsoft-teams"
+cask "skype"
+cask "slack"
+cask "telegram"
+cask "whatsapp"
+cask "zoom"
+mas "KakaoTalk", id: 869223134
+mas "LINE", id: 539883307

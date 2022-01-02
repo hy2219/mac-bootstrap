@@ -1,0 +1,6 @@
+cask "miro"
+cask "notion"
+cask "spectacle"
+cask "tuple"
+cask "virtualbox"
+mas "Flycut", id: 442160987

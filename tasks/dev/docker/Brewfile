@@ -1,0 +1,6 @@
+tap "weaveworks/tap"
+
+brew "docker"
+brew "helm"
+brew "hyperkit"
+brew "minikube"

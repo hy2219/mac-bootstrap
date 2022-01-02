@@ -1,0 +1,12 @@
+tap "AdoptOpenJDK/openjdk"
+
+brew "maven"
+cask "adoptopenjdk11-openj9"
+cask "charles"
+cask "datagrip"
+cask "intellij-idea"
+cask "ngrok"
+cask "postman"
+cask "visual-studio-code"
+cask "sublime-text"
+mas "Xcode", id: 497799835

@@ -1,0 +1,4 @@
+cask "brave-browser"
+cask "firefox"
+cask "google-chrome"
+cask "tor-browser"
