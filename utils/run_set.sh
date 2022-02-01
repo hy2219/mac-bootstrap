@@ -6,5 +6,3 @@ run_taskset(){
     sh "$TASKS_DIR"/"$1"/"$candidate"/run.sh
   done
 }
-
-export -f run_taskset

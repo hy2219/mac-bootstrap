@@ -3,5 +3,3 @@ clone_git(){
   echo "Cloning $3"
   git clone --depth=1 $1 $2
 }
-
-export -f clone_git

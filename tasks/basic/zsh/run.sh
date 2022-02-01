@@ -3,7 +3,7 @@ TASK_HOME=$(dirname "$0")
 source "$UTILS_DIR"/clone_git.sh
 source "$UTILS_DIR"/print.sh
 
-brew bundle --file "$TASK_HOME"/Brewfile --no-lock
+brew bundle --file "$FILE_DIR"/Brewfile --no-lock
 
 # Install oh-my-zsh
 if [[ -z $(zsh --version) ]] ; then

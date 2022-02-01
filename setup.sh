@@ -18,7 +18,7 @@ fi
 if [[ -z $(which brew) ]] ; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
- 
+
 # Setup Brew
 brew bundle --file "$HOME_DIR"/Brewfile --no-lock
 
