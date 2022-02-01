@@ -3,7 +3,7 @@ TASK_HOME=$(dirname "$0")
 source "$UTILS_DIR"/clone_git.sh
 source "$UTILS_DIR"/print.sh
 
-brew bundle --file "$FILE_DIR"/Brewfile --no-lock
+brew bundle --file "$TASK_HOME"/Brewfile --no-lock
 
 # Install oh-my-zsh
 if [[ -z $(zsh --version) ]] ; then
@@ -18,5 +18,10 @@ sed -i "" "s/plugins=(git)/plugins=(\n\tgit\n\tzsh-autosuggestions\n\tzsh-syntax
 # Install Powerlevel10k theme
 clone_git https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"/themes/powerlevel10k powerlevel10k
 sed -i "" "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"powerlevel10k\/powerlevel10k\"/g" "$HOME"/.zshrc
+
+sed -i "" "/source ~\/.p10k.zsh/d" "$HOME"/.zshrc
+echo "source ~/.p10k.zsh" >> "$HOME"/.zshrc
+
+sudo chmod -R 755 "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"/plugins
 
 print "> Check if theme and plugins are set correctly in .zshrc"
