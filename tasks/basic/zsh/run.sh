@@ -14,14 +14,12 @@ fi
 clone_git https://github.com/zsh-users/zsh-autosuggestions.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"/plugins/zsh-autosuggestions zsh-autosuggestions
 clone_git https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"/plugins/zsh-syntax-highlighting zsh-syntax-highlighting
 sed -i "" "s/plugins=(git)/plugins=(\n\tgit\n\tzsh-autosuggestions\n\tzsh-syntax-highlighting\n)/g" "$HOME"/.zshrc
+sudo chmod -R 755 "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"/plugins
 
 # Install Powerlevel10k theme
 clone_git https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"/themes/powerlevel10k powerlevel10k
 sed -i "" "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"powerlevel10k\/powerlevel10k\"/g" "$HOME"/.zshrc
-
 sed -i "" "/source ~\/.p10k.zsh/d" "$HOME"/.zshrc
 echo "source ~/.p10k.zsh" >> "$HOME"/.zshrc
-
-sudo chmod -R 755 "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"/plugins
 
 print "> Check if theme and plugins are set correctly in .zshrc"
