@@ -1,6 +1,4 @@
-tap "AdoptOpenJDK/openjdk"
-
 brew "gradle"
 brew "maven"
 brew "mvnvm"
-cask "adoptopenjdk11-openj9"
+cask "AdoptOpenJDK/openjdk/adoptopenjdk11-openj9"

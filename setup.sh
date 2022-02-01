@@ -13,6 +13,7 @@ export UTILS_DIR
 if [[ -z $(xcode-select -p) ]] ; then
   xcode-select --install
 fi
+softwareupdate --all --install --force
 
 # Install Homebrew
 if [[ -z $(which brew) ]] ; then

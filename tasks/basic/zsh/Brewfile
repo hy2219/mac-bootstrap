@@ -1,4 +1,2 @@
-tap "homebrew/cask-fonts"
-
 brew "zsh"
-cask "font-fira-code"
+cask "homebrew/cask-fonts/font-fira-code"

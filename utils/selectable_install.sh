@@ -8,7 +8,7 @@ cleanup () {
 get_user_selected_options () {
     FILE_DIR=$1
     oifs=$IFS
-    IFS=$'\n' read -d '' -r -a rawOptions <<< "$(grep -v "tap" "$FILE_DIR"/Brewfile)"
+    IFS=$'\n' read -d '' -r -a rawOptions <<< "$(grep -v "^tap" "$FILE_DIR"/Brewfile)"
     IFS=$oifs
 
     choice () {
@@ -65,7 +65,7 @@ get_user_selected_options () {
 
 prepare_brewfile () {
     FILE_DIR=$1
-    grep -hr "tap" "$FILE_DIR"/Brewfile > "$FILE_DIR"/Brewfile.tmp
+    grep -hr "^tap" "$FILE_DIR"/Brewfile > "$FILE_DIR"/Brewfile.tmp
 }
 
 install_selectable_options () {

@@ -1,1 +1,1 @@
-brew "eksctl"
+brew "weaveworks/tap/eksctl"
