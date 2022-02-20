@@ -6,9 +6,7 @@ source "$UTILS_DIR"/print.sh
 brew bundle --file "$TASK_HOME"/Brewfile --no-lock
 
 # Install oh-my-zsh
-if [[ -z $(zsh --version) ]] ; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-fi
+bash -lic 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
 
 # Add oh-my-zsh plugins
 clone_git https://github.com/zsh-users/zsh-autosuggestions.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"/plugins/zsh-autosuggestions zsh-autosuggestions

@@ -2,6 +2,9 @@
 TASK_HOME=$(dirname "$0")
 source "$UTILS_DIR"/print.sh
 
+mkdir -p "$HOME"/.ssh
+touch "$HOME"/.ssh/config
+
 if grep "Host *" "$HOME"/.ssh/config ; then
   print "> Base ssh configuration already exists...Skipping..."
 else
