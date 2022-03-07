@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Setup Directories
-HOME_DIR=$(pwd)/$(dirname "$0")
+HOME_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 printf "Working on: %s\n\n" "$HOME_DIR"
 UTILS_DIR=$HOME_DIR/utils
 

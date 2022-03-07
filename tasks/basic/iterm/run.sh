@@ -1,5 +1,5 @@
 #!/bin/bash
-TASK_HOME=$(dirname "$0")
+TASK_HOME=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source "$UTILS_DIR"/print.sh
 
 brew bundle --file "$TASK_HOME"/Brewfile --no-lock
