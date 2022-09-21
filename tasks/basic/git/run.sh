@@ -12,3 +12,8 @@ sed -i "" "s|___EMAIL___|$email|g" "$HOME"/.gitconfig
 sed -i "" "s|___HOME___|"$HOME"|g" "$HOME"/.gitconfig
 
 install_selectable_options "$TASK_HOME"
+
+read -erp "Install git-duet and portal[y/n]: " is_install_duet
+if [[ $is_install_duet == "y" ]]; then
+    sh "$TASK_HOME"/duet/run.sh;
+fi

@@ -1,0 +1,5 @@
+tap "git-duet/tap"
+tap "erictsiliacos/tap"
+
+brew "git-duet/tap/git-duet"
+brew "erictsiliacos/tap/portal"
