@@ -1,4 +1,4 @@
-brew "docker"
+cask "docker"
 brew "kubectl"
 brew "helm"
 brew "hyperkit"
