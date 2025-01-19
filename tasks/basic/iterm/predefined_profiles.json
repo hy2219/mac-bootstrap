@@ -417,7 +417,7 @@
         "Blue Component": 1,
         "Red Component": 0.3333333432674408
       },
-      "ASCII Ligatures": true,
+      "ASCII Ligatures": false,
       "Name": "HSY Default",
       "Cursor Text Color": {
         "Green Component": 1,
@@ -463,7 +463,7 @@
         "Red Component": 0
       },
       "Guid": "BCEAACA4-BEFC-4027-8DEE-D11640234759",
-      "Normal Font": "MesloLGS-NF-Regular 15",
+      "Normal Font": "Menlo 14",
       "Ansi 2 Color": {
         "Green Component": 0.73333334922790527,
         "Blue Component": 0,
